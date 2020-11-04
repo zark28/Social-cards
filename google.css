@@ -1,0 +1,103 @@
+.gg{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .gg li {
+    list-style: none;
+    margin: 0 5px;
+  }
+  
+  .gg li .fa{
+      font-size: 40px;
+      color: #262626;
+      line-height: 80px;
+      transition: 0.5s;
+      padding-right: 14px;
+    }
+  
+  .gg li a span {
+      margin: 0;
+      padding: 0;
+    position: absolute;
+    top: 30px;
+    color: #262626;
+    letter-spacing: 4px;
+    transition: 0.5s;
+  }
+  
+  .gg li a {
+    text-decoration: none;
+    display: absolute;
+    /* position: absolute; */
+    display: block;
+    width: 210px;
+    height: 80px;
+    background: #fff;
+    text-align: left;
+    padding-left: 20px;
+    transform: rotate(-30deg) skew(25deg) translate(0, 0);
+    transition: 0.5s;
+    box-shadow: -20px 20px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .gg li a:before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: -20px;
+    height: 100%;
+    width: 20px;
+    background: #b1b1b1;
+    transform: 0.5s;
+    /* transition: .5s; */
+    transform: rotate(0deg) skewY(-45deg);
+  }
+  
+  .gg li a:after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: -10px;
+    height: 20px;
+    width: 100%;
+    background: #b1b1b1;
+    transform: 0.5s;
+    /* transition: .5s; */
+    transform: rotate(0deg) skewX(-45deg);
+  }
+  
+  .gg li a:hover {
+    transform: rotate(-30deg) skew(25deg) 
+    translate(20px, -15px);
+    box-shadow: -50px 50px 50px rgba(0, 0, 0, 0.5);
+  }
+  
+  .gg li:hover .fa {
+    /* color: #fff; */
+    filter: invert(93%) sepia(95%) saturate(0%) hue-rotate(170deg)
+      brightness(106%) contrast(104%);
+  }
+  
+  .gg li:hover span {
+    color: #fff;
+  }
+
+  
+  .gg li:hover a {
+    background: #dd4b39;
+  }
+  
+  .gg li:hover a::before {
+    background: #b33a2b;
+  }
+  
+  .gg li:hover a::after {
+    background: #e66a5a;
+  }
+  

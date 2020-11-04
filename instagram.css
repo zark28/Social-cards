@@ -1,0 +1,100 @@
+.inst {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.inst li {
+  list-style: none;
+  margin: 0 5px;
+}
+
+.inst li .fa {
+  font-size: 40px;
+  color: #262626;
+  line-height: 80px;
+  transition: 0.5s;
+  padding-right: 14px;
+}
+
+.inst li a span {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 30px;
+  color: #262626;
+  letter-spacing: 4px;
+  transition: 0.5s;
+}
+
+.inst li a {
+  text-decoration: none;
+  display: absolute;
+  /* position: absolute; */
+  display: block;
+  width: 210px;
+  height: 80px;
+  background: #fff;
+  text-align: left;
+  padding-left: 20px;
+  transform: rotate(-30deg) skew(25deg) translate(0, 0);
+  transition: 0.5s;
+  box-shadow: -20px 20px 10px rgba(0, 0, 0, 0.5);
+}
+
+.inst li a:before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: -20px;
+  height: 100%;
+  width: 20px;
+  background: #b1b1b1;
+  transform: 0.5s;
+  /* transition: .5s; */
+  transform: rotate(0deg) skewY(-45deg);
+}
+
+.inst li a:after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: -10px;
+  height: 20px;
+  width: 100%;
+  background: #b1b1b1;
+  transform: 0.5s;
+  /* transition: .5s; */
+  transform: rotate(0deg) skewX(-45deg);
+}
+
+.inst li a:hover {
+  transform: rotate(-30deg) skew(25deg) translate(20px, -15px);
+  box-shadow: -50px 50px 50px rgba(0, 0, 0, 0.5);
+}
+
+.inst li:hover .fa {
+  /* color: #fff; */
+  filter: invert(93%) sepia(95%) saturate(0%) hue-rotate(170deg)
+    brightness(106%) contrast(104%);
+}
+
+.inst li:hover span {
+  color: #fff;
+}
+
+.inst li:hover a {
+  background: #e4405f;
+}
+
+.inst li:hover a::before {
+  background: #d81c3f;
+}
+
+.inst li:hover a::after {
+  background: #e46880;
+}
